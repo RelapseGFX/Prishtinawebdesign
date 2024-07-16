@@ -4,7 +4,7 @@
     "description": "My awesome project",
     "main": "index.js",
     "scripts": {
-      "build": "webpack --mode production",
+      "build": "npm install webpack-cli -D && webpack --mode production",
       "start": "node server.js",
       "test": "jest"
     },
