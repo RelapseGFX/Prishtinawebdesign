@@ -1117,14 +1117,14 @@ fieldset {
 .methods-wrapper {
     margin-top: 2em;
 }
-.footer-list a {
+.footer-list div {
     padding: 1em 0;
     color: white;
     position: relative;
     font-size: 16px;
     text-decoration: none;
 }
-.footer-list.faca a::before{
+.footer-list.faca div::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -1134,7 +1134,7 @@ fieldset {
     background: var(--primary-color);
     transition: .3s ease;
 }
-.footer-list.faca a:hover::before{
+.footer-list.faca div:hover::before{
     width: 100%;
 }
 .bottom-part p {
