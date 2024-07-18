@@ -1063,6 +1063,7 @@ fieldset {
 .illustration {
     width: 45%;
     max-width: 500px;
+    height: auto;
 }
 .bgfooter{
     background: #24282E;
@@ -1431,8 +1432,17 @@ fieldset {
     .success-wrapper {
         padding-top: 120px;
     }
+    #contacti {
+        padding-bottom: 50px;
+    }
+    #forwho {
+        padding: 50px 16px;
+    }
 }
 @media only screen and (max-width: 480px) {
+    .image {
+        max-width: 100%;
+    }
     .grow {
         font-size: 30px;
         width: 100%;
@@ -1442,7 +1452,10 @@ fieldset {
         display: none;
     }
     section{
-        padding: 80px 16px 0;
+        padding: 50px 16px 0;
+    }
+    #whatwedo{
+        padding: 50px 16px 0;
     }
     #cta{
         padding: 0;
@@ -1647,9 +1660,6 @@ fieldset {
     }
     #special {
         gap: 2em;
-    }
-    #specials {
-        padding-bottom: 80px;
     }
     .contact-wrapper {
         flex-direction: column;
