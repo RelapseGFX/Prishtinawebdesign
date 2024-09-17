@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KJ0HTVM7D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-9KJ0HTVM7D');
+    </script>
+    <title>Web dizajn për biznese të vogla + Development | Prishtina Web Design</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/ico">
+    <meta name="description" content="Web dizajn për biznese të vogla + Development. Ne ofrojmë website unike me rezultate të kënaqshme — duke filluar prej €40/muaj.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0,"/>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="canonical" href="https://prishtinawebdesign.com/index.html" />
+    <link rel="preload" fetchpriority="high" as="image" href="assets/images/bghero-image.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="assets/images/bghero-image-dark.webp" type="image/webp">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <picture class="logotop">
+        <source type="image/webp" srcset="../assets/images/logo-top.webp" media="prefers-color-scheme: light">
+        <source type="image/webp" srcset="../assets/images/logo-top-dark.webp" media="prefers-color-scheme: dark">
+        <img class="iconlight" src="../assets/images/logo-top.svg" alt="">
+        <img class="icondark" src="../assets/images/logo-top-dark.svg" alt="">
+      </picture>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>    
+      </label>
+      <div class="nav-right">
+        <nav class="navbar">
+          <a class="active" href="index.html">Ballina</a>
+          <a href="services.html">Sherbimet</a>
+          <a href="about.html">Rreth Nesh</a>
+          <a href="#projects">Projektet</a>
+          <a href="contact.html">Kontakti</a>
+        </nav>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+          <img class="iconswitch" id="iconswitch" src="assets/images/sun.svg" alt="Moon and sun">
+        </button>
+      </div>
+    </div>
+  </header>
+    <section id="hero" class="hero">
+      <div class="bghero-image">
+        <div class="container">
+          <div class="hero-wrapper">
+          <div class="upper-part">
+            <h1 class="tittle-hero">Web design për biznese të vogla + development</h1>
+            <p class="paragraph-hero">Ne ofrojmë website unike me rezultate të kënaqshme — duke filluar prej €40/muaj.</p>
+            <a href="#price"><div class="hero-button"><button class="primary-button">Shiko çmimet</button></div></a>
+          </div>
+          <picture class="hero-illustration">
+            <img
+            class="iconlight"
+            src="assets/images/hero-illustration.svg"
+            loading="lazy"
+            alt="Web Development Illustration lightMode"
+            />
+            <img
+            class="icondark"
+            src="assets/images/hero-illustration-dark.svg"
+            loading="lazy"
+            alt="Web Development Illustration darkMode"
+            />
+          </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="whatwedo" class="whatwedo">
+      <div class="container">
+        <div class="wrapper">
+          <div class="upper-part">
+          <h2 class="tittle-services">Qfarë bëjmë ne</h2>
+          <p class="text-services">Ne krijojmë website prej fillimit për një performancë më të shpejtë, e cila ndikon në rritjen e vizitorëve të faqes suaj si dhe rritjen e fitimeve të biznesit tuaj. Që ju ndërkohë të fokusoheni vetëm në drejtimin e tij. <a href="services.html"><span style="font-weight: 500; color: var(--primary-color);">Lexo më shumë</span></p></a>
+          </div>
+          <div class="boxes-wrapper">
+            <div class="block-item">
+              <picture class="block-icon iconlight">
+                <img 
+                src="assets/images/webdesign.svg"
+                loading="lazy"
+                alt="Web Design lightMode"
+                />
+              </picture>
+              <picture class="block-icon icondark">
+                <img 
+                src="assets/images/webdesign-dark.svg"
+                loading="lazy"
+                alt="Web Design darkMode"
+                />
+              </picture>
+              <h3 class="title-block">Faqe e volitshme</h3>
+              <p class="text-block">Përmbajtja juaj online nuk duhet të jetë e dobët, duke shpresuar se funksionon. Ne e mendojmë atë mirë, dhe e vendosim në një radhitje të caktuar për të tërhequr më shumë klientë.</p>
+            </div>
+            <div class="block-item">
+              <picture class="block-icon iconlight">
+              <img 
+              src="assets/images/responsive.svg"
+              loading="lazy"
+              alt="Responsiveness lightMode"
+              />
+              </picture>
+              <picture class="block-icon icondark">
+              <img 
+              src="assets/images/responsive-dark.svg"
+              loading="lazy"
+              alt="Responsiveness darkMode"
+              />
+              </picture>
+              <h3 class="title-block">Faqe fleksibile</h3>
+              <p class="text-block">Faqja juaj do të përshtatet në të gjitha llojet e pajisjeve si p.sh: telefon, laptop, kompjuter, si dhe tablet, në mënyrë që klientët tuaj të ju gjejnë më lehtë.</p>
+            </div>
+            <div class="block-item">
+              <picture class="block-icon iconlight">
+              <img 
+              src="assets/images/optimized.svg"
+              loading="lazy"
+              alt="Optimized lightMode"
+              />
+              </picture>
+              <picture class="block-icon icondark">
+              <img 
+              src="assets/images/optimized-dark.svg"
+              loading="lazy"
+              alt="Optimized darkMode"
+              />
+              </picture>
+              <h3 class="title-block">Faqe për telefon</h3>
+              <p class="text-block">80% e internetit janë përdorues të telefonave celularë. Ne marrim masat e duhura që biznesi juaj të shfaqet më lart kur kërkohet dhe të performojë më mirë në makinat e kërkimit (Google).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <div class="wrapper">
+          <div class="upper-part">
+          <h2 class="tittle-features"><span style="color: var(--primary-color);">40 Euro per muaj,</span> 1 vjet minimumi i kontrates</h2>
+          <p class="text-features">0 Euro paradhenie per nje website te biznesit te vogel me 5 faqe. Nese ju nevojitet me shume, ne do ju japim nje cmim tjeter duke u bazuar ne madhesine e projektit dhe kohen qe na nevojitet per ta perfunduar. Domani dhe permbajtja jane prone e juaja.<br><br>Anuloni kontraten pas perfundimit te afatit pa ndonje shqetesim.</p>
+          </div>
+          <div class="global-wrapper">
+            <div class="block-wrapper">
+              <div class="feature-block">
+                <picture class="feature-icon iconlight">
+                  <img 
+                  src="assets/images/webdesign-icon.svg"
+                  loading="lazy"
+                  alt="Web Design lightMode"
+                  />
+                </picture>
+                <picture class="feature-icon icondark">
+                  <img 
+                  src="assets/images/webdesign-icondark.svg"
+                  loading="lazy"
+                  alt="Web Design darkMode"
+                  />
+                </picture>
+                <div class="feature-right">
+                  <h3 class="title-feature">Web design & development</h3>
+                  <p class="text-feature">Përfshin 40 orë të dizajnit, zhvillimit dhe testimit të webfaqes. Përfito më shumë në një çmim të vetëm.</p>
+                </div>
+              </div>
+              <div class="feature-block">
+                <picture class="feature-icon iconlight">
+                  <img 
+                  src="assets/images/hosting-icon.svg"
+                  loading="lazy"
+                  alt="Hosting lightMode"
+                  />
+                </picture>
+                <picture class="feature-icon icondark">
+                  <img 
+                  src="assets/images/hosting-icon-dark.svg"
+                  loading="lazy"
+                  alt="Hosting darkMode"
+                  />
+                </picture>
+                <div class="feature-right">
+                <h3 class="title-feature">Hostimi falas</h3>
+                <p class="text-feature">Hostimi falas për webfaqe sipas nevojave të biznesit. Host-i është si një banesë ku webfaqja juaj pushon.</p>
+                </div>
+              </div>
+              <div class="feature-block">
+                <picture class="feature-icon iconlight">
+                  <img 
+                  src="assets/images/unlimited-changes.svg"
+                  loading="lazy"
+                  alt="Unlimited changes lightMode"
+                  />
+                </picture>
+                <picture class="feature-icon icondark">
+                  <img 
+                  src="assets/images/unlimited-changes-dark.svg"
+                  loading="lazy"
+                  alt="Unlimited changes darkMode"
+                  />
+                </picture>
+                <div class="feature-right">
+                <h3 class="title-feature">Ndryshime pakufi</h3>
+                <p class="text-feature">Ndrysho çfarë ke nevojë në çdo kohë dhe do të përfundohet atë ditë. Thirr kurdo ditë apo natë.</p>
+              </div>
+              </div>
+              <div class="feature-block">
+                <picture class="feature-icon iconlight">
+                  <img 
+                  src="assets/images/analytics-icon.svg"
+                  loading="lazy"
+                  alt="Analytics lightMode"
+                  />
+                </picture>
+                <picture class="feature-icon icondark">
+                  <img 
+                  src="assets/images/analytics-icon-dark.svg"
+                  loading="lazy"
+                  alt="Analytics darkMode"
+                  />
+                </picture>
+                <div class="feature-right">
+                <h3 class="title-feature">Google Analytics</h3>
+                <p class="text-feature">Ne instalojmë Google Analytics falas për të parë prejardhjen e përdoruesve.</p>
+                </div>
+              </div>
+            </div>
+            <div class="image">
+              <picture class="iconlight">
+                <img
+                class="guy-in-laptop"
+                src="assets/images/guy-in-laptop.svg"
+                loading="lazy"
+                alt="Guy in laptop lightMode"
+                />
+              </picture>
+              <picture class="icondark">
+                <img
+                class="guy-in-laptop"
+                src="assets/images/guy-in-laptop-dark.svg"
+                loading="lazy"
+                alt="Guy in laptop darkMode"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="process">
+      <div class="container">
+        <div class="global-wrapper s">
+          <div class="text-left">
+            <h2>Si funksionon?</h2>
+            <p class="margintop-1em">Konsultoheni me ekipen — Rishikoni përfundimisht — Publikoni faqen.</p>
+          </div>
+          <div class="items-right">
+            <div class="item">
+              <div class="circle">1</div>
+              <div class="text-right">
+                <h3 class="black">Konsultoheni me ekipen</h3>
+                <p class="paddingtop-05em black">Ne ju bejme disa pyetje rreth biznesit tuaj dhe qfare ofroni.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="circle">2</div>
+              <div class="text-right">
+                <h3 class="black">Krijimi i webfaqes</h3>
+                <p class="paddingtop-05em black">Pastaj ne fillojme me krijimin e webfaqes. Ne do ta rishikojme nese ka nevoje per ndryshime.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="circle">3</div>
+              <div class="text-right">
+                <h3 class="black">Publikimi i faqes</h3>
+                <p class="paddingtop-05em black">Ne fund ne ja u dergojme nje link per ta rishikuar perseri dhe nese eshte ne rregull e publikojme.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="tittle-projects">Projektet e mëparshme</h2>
+          <div class="boxes-wrapper">
+            <div class="projects-item">
+              <picture class="projects-img">
+                <source
+                srcset="assets/images/tonninvestments.webp"
+                type="image/webp"
+                />
+                <img
+                src="assets/images/tonninvestments.jpg"
+                loading="lazy"
+                alt="Tonn Investments website"
+                />
+              </picture>
+              <div class="up-part">
+                <h4>Tonn Investments</h4>
+                <p class="lo">Hamburg, Gjermani</p>
+              </div>
+              <p class="description">Marka Tonn Investments bashkon shërbimet e mëposhtme financiare dhe kompanitë e pasurive të paluajtshme.</p>
+              <div class="secondary-button margin-top">Së shpejti</div>
+            </div>
+            <div class="projects-item">
+              <picture class="projects-img">
+                <source
+                srcset="assets/images/rrugemar.webp"
+                type="image/webp"
+                />
+                <img
+                src="assets/images/rrugemar.jpg"
+                loading="lazy"
+                alt="Rrugemar Website"
+                />
+              </picture>
+              <div class="up-part">
+              <h4>Rrugemar</h4>
+              <p class="lo">Pejë</p>
+              </div>
+              <p class="description">Rrugemar është një platformë ankandesh ku mund të bëni oferta për të blerë makina të riparuara dhe të përdorura.</p>
+              <div class="secondary-button margin-top">Së shpejti</div>
+            </div>
+            <div class="projects-item">
+              <picture class="projects-img">
+                <source
+                srcset="assets/images/mesokrypto.webp"
+                type="image/webp"
+                />
+                <img
+                src="assets/images/mesokrypto.jpg"
+                alt="Mesokrypto Website"
+                loading="lazy"
+                />
+              </picture>
+              <div class="up-part">
+              <h4>Mësokrypto</h4>
+              <p class="lo">Prizren</p>
+              </div>
+              <p class="description">Marka Tonn Investments bashkon shërbimet e mëposhtme financiare dhe kompanitë e pasurive të paluajtshme.</p>
+              <div class="secondary-button margin-top">Së shpejti</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="global-wrapper">
+          <picture class="image-side">
+            <source
+            srcset="assets/images/about.webp"
+            /> 
+            <img
+            class="about-us"
+            src="assets/images/about.jpg"
+            loading="lazy"
+            alt="Developer debugging code in his desk"
+            />
+          </picture>
+          <div class="text-side">
+            <h2>Rreth Nesh</h2>
+            <p class="margintop-2em">Ideja rreth biznesit ka lindur spontanisht kur gjate bashkpunimit me nje prej klienteve tane ai na pyeti se a ka mundesi te paguhet me keste. Pas kesaj na erdhi edhe idea per te krijuar website, mirepo me nje nyje. Ne vend se te ju kerkojme nje shume paraprake klienteve, ne thjeshte do ta kishim nje shume te caktuar mujore ne menyre qe klientet ta kene me te lehte. <br><br> Ne te njejten kohe bizneset do te kene me shume mundesi te krijojne prezencen tyre online pa u shqetesuar shume per koston e saj. <span style="color: var(--primary-color); font-weight: 500;"><a href="about.html">Lexo me shume</a></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="price" class="pricing">
+      <div class="container">
+        <div class="wrapper">
+          <div class="upper-part">
+            <h2>Çmimet</h2>
+            <p>Rri i qetë, nuk ka asnjë kosto të fshehur.</p>
+          </div>
+          <div class="box-wrapper">
+            <div class="pricing-box">
+              <h3 class="plan">Pagesa me para në dorë</h3>
+              <div class="lower-info">
+                <p class="legend">Duke filluar prej</p>
+                <div class="price-tag">
+                  <h1 class="price">800</h1>
+                  <h3 class="currency">EUR</h3>
+              </div>
+              </div>
+              <div class="benefits">
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                  <img
+                  src="assets/images/tick-icon.svg"
+                  loading="lazy"
+                  alt="Tick icon"
+                  />
+                  </picture>
+                  <div class="benefits-item">Dizajnuar me porosi</div>
+                </div>
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">Cmim fiks i projektit</div>
+                </div>
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">Ndryshim i permbajtjes</div>
+                </div>
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">Shopify integration</div>
+                </div>
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">E lehte per tu perdorur</div>
+                </div>
+              </div>
+              <a class="primary-button margintop-2em" href="src/contact.html">Na kontaktoni</a>
+            </div>
+            <div class="marked-box">
+              <h3 class="plan">Abonimi</h3>
+              <div class="lower-info">
+                <p class="legend">5 nenfaqe</p>
+                <div class="price-tag">
+                  <div class="price-info">
+                  <h1 class="price">40</h1>
+                  <span class="duration">/muaji</span>
+                  </div>
+                  <h3 class="currency">EUR</h3>
+                </div>
+              </div>
+              <div class="benefits">
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    width="20" height="20"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">Ndryshime pakufi</div>
+                </div>
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    width="20" height="20"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">Hostim falas</div>
+                </div>
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    width="20" height="20"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">24/7 support</div>
+                </div>
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    width="20" height="20"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">Google Analytics</div>
+                </div>
+                <div class="benefit-line">
+                  <picture class="benefit-icon">
+                    <img
+                    src="assets/images/tick-icon.svg"
+                    width="20" height="20"
+                    loading="lazy"
+                    alt="Tick icon"
+                    />
+                  </picture>
+                  <div class="benefits-item">100 shpejtesi te faqes</div>
+                </div>
+              </div>
+              <a class="primary-button margintop-2em" href="src/contact.html">Na kontaktoni</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="forwho" class="forwho">
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="tittle-who">Për kë është i përshtatshëm Prishtina Web Design</h2>
+          <div class="grid">
+            <div class="forwho-item">
+              <picture class="forwho-icon iconlight">
+                <img
+                src="assets/images/coffe-restaurant.svg"
+                loading="lazy"
+                alt="Cofe & Restaurant lightMode"
+                />
+              </picture>
+              <picture class="forwho-icon icondark">
+                <img
+                src="assets/images/coffe-restaurant-dark.svg"
+                loading="lazy"
+                alt="Cofe & Restaurant darkMode"
+                />
+              </picture>
+              <div class="tittle-forwho"><h3>Kafiteritë & Restaurantet</h3></div>
+              <p>Paraqit ushqimin & pijet të cilat i ofroni për t'i parë vizitorët para se të shkelin në hapësirën tuaj.</p>
+            </div>
+            <div class="forwho-item">
+              <picture class="forwho-icon iconlight">
+                <img
+                src="assets/images/accountant-icon.svg"
+                loading="lazy"
+                alt="Accountant lightMode"
+                />
+              </picture>
+              <picture class="forwho-icon icondark">
+                <img
+                src="assets/images/accountant-icon-dark.svg"
+                loading="lazy"
+                alt="Accountant darkMode"
+                />
+              </picture>
+              <div class="tittle-forwho"><h3>Kontabilistët</h3></div>
+              <p>Jepni informata rreth shërbimeve të kontabilitetit, eksperiencës dhe kualifikimeve.</p>
+            </div>
+            <div class="forwho-item">
+              <picture class="forwho-icon iconlight">
+                <img
+                src="../pages/assets/images/lawfirm-icon.svg"
+                loading="lazy"
+                alt="Lawfirm lightMode"
+                />
+              </picture>
+              <picture class="forwho-icon icondark">
+                <img
+                src="assets/images/lawfirm-icon-dark.svg"
+                loading="lazy"
+                alt="Lawfirm darkMode"
+                />
+              </picture>
+              <div class="tittle-forwho"><h3>Firmat ligjore</h3></div>
+              <p>Dëshmoni se jeni partner kredibil dhe keni vlera të dobishme për një bashkëpunëtor të ri.</p>
+            </div>
+            <div class="forwho-item">
+              <picture class="forwho-icon iconlight">
+                <img
+                src="assets/images/building-icon.svg"
+                loading="lazy"
+                alt="Building lightMode"
+                />
+              </picture>
+              <picture class="forwho-icon icondark">
+                <img
+                src="assets/images/building-icon-dark.svg"
+                loading="lazy"
+                alt="Building darkMode"
+                />
+              </picture>
+              <div class="tittle-forwho"><h3>Kompanitë e ndërtimit</h3></div>
+              <p>Tregoni se jeni lider i vërtetuar për të realizuar dhe përfunduar projektet e dëshiruara.</p>
+            </div>
+            <div class="forwho-item">
+              <picture class="forwho-icon iconlight">
+                <img
+                src="assets/images/store-icon.svg"
+                loading="lazy"
+                alt="Store darkMode"
+                />
+              </picture>
+              <picture class="forwho-icon icondark">
+                <img
+                src="assets/images/store-icon-dark.svg"
+                loading="lazy"
+                alt="Store lightMode"
+                />
+              </picture>
+              <div class="tittle-forwho"><h3>Dyqanet e produkteve</h3></div>
+              <p>Publiko produktet & ofertat për të tërhequr më shumë shitje për biznesin tënd.</p>
+            </div>
+            <div class="forwho-item">
+              <picture class="forwho-icon iconlight">
+                <img
+                src="assets/images/hospital-icon.svg"
+                loading="lazy"
+                alt="Hospital lightMode"
+                />
+              </picture>
+              <picture class="forwho-icon icondark">
+                <img
+                src="assets/images/hospital-icon-dark.svg"
+                loading="lazy"
+                alt="Hospital darkMode"
+                />
+              </picture>
+              <div class="tittle-forwho"><h3>Klinikat private & Spitalet</h3></div>
+              <p>Shfaq se ofroni një mjedis të besueshëm dhe të sigurt për pacientët dhe familjaret e tyre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <!--
+    <section id="cta" class="cta">
+     <div class="cta-container">
+        <div class="cta-wrapper">
+          <picture class="leaf iconlight">
+            <img
+            src="assets/images/leaf.svg"
+            loading="lazy"
+            alt="Leaf lightMode"
+            />
+          </picture>
+          <picture class="leaf icondark">
+            <img
+            src="assets/images/leaf-dark.svg"
+            loading="lazy"
+            alt="Leaf darkMode"
+            />
+          </picture>
+          <picture class="palma iconlight">
+            <img
+            src="assets/images/palma.svg"
+            loading="lazy"
+            alt="Leaf lightMode"
+            />
+          </picture>
+          <picture class="palma icondark">
+            <img
+            src="assets/images/palma-dark.svg"
+            loading="lazy"
+            alt="Leaf darkMode"
+            />
+          </picture>
+          <div class="center">
+            <h1 class="tittle-cta">Lorem ipsum dolor sit amet</h1>
+            <a class="primary-button" href="src/contact.html">Na kontaktoni</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    /-->
+    <footer>
+      <section id="footer" class="footer">
+        <div class="bgfooter">
+          <div class="footer-container">
+            <div class="top-part">
+              <div class="company">
+                <picture>
+                <source
+                srcset="assets/images/logo-bottom.webp"
+                type="image/webp"
+                />
+                <img
+                src="assets/images/logo-bottom.svg"
+                loading="lazy"
+                alt="Logo bottom"
+                />
+                </picture>
+                <div class="methods-wrapper">
+                  <div class="type">
+                    <picture>
+                      <img
+                      src="assets/images/mails.svg"
+                      width="20" height="20"
+                      alt="Email icon"
+                      />
+                    </picture>
+                    <a target="_blank" href="mailto:pcwdinfo@gmail.com"><p>pcwdinfo@gmail.com</p></a>
+                  </div>
+                  <div class="type">
+                    <picture>
+                      <img
+                      src="assets/images/mobil.svg"
+                      width="20" height="20"
+                      alt="Mobile"
+                      />
+                    </picture>
+                    <p>+383 49 135 244</p>
+                </div>
+                </div>
+              </div>
+              <div class="right-part">
+                <div class="link-part">
+                  <h3 class="title-link">Faqet</h3>
+                  <div class="footer-list faca">
+                    <a href="index.html"><div>Ballina</div></a>
+                    <a href="src/services.html"><div>Sherbimet</div></a>
+                    <a href="src/about.html"><div>Rreth Nesh</div></a>
+                    <a href="../pages/index.html#projects"><div>Projektet</div></a>
+                    <a href="src/contact.html"><div>Kontakti</div></a>
+                  </div>
+                </div>
+                <div class="link-part">
+                  <h3 class="title-link">Sherbimet</h3>
+                  <div class="footer-list other">
+                    <div>Web design</div>
+                    <div>Krijimi i logos</div>
+                    <div>Menaxhimi i rrjeteve sociale</div>
+                    <div>Mirembajtje e webit</div>
+                    <div>SEO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-part">
+              <p>Copyright © 2024 | Prishtina Web Designs | All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="darkmode.js" defer>
+    </script>
+</body>
+</html>

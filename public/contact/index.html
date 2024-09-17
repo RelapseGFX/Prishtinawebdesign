@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <title>Na kontaktoni</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/ico">
+    <meta name="description" content="Na kontaktoni. Email: pcwdinfo@gmail.com. Numri i telefonit: 049 123 123. Na shkruani.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="nav-container">
+          <picture class="logotop">
+            <source type="image/webp" srcset="../assets/images/logo-top.webp" media="prefers-color-scheme: light">
+            <source type="image/webp" srcset="../assets/images/logo-top-dark.webp" media="prefers-color-scheme: dark">
+            <img class="iconlight" src="../assets/images/logo-top.svg" alt="">
+            <img class="icondark" src="../assets/images/logo-top-dark.svg" alt="">
+          </picture>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>    
+          </label>
+          <div class="nav-right">
+            <nav class="navbar">
+              <a href="../index.html">Ballina</a>
+              <a href="services.html">Sherbimet</a>
+              <a href="about.html">Rreth Nesh</a>
+              <a href="../index.html#projects">Projektet</a>
+              <a class="active" href="contact.html">Kontakti</a>
+            </nav>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+              <img class="iconswitch" id="iconswitch" src="assets/images/sun.svg" alt="Moon and sun">
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="contact-doe" id="contact-doe">
+        <div class="contact-bgimage">
+          <div class="contact-container">
+            <div class="contact-wrapper">
+              <div class="communication">
+                <div class="way">
+                  <img class="iconic iconlight" src="../assets/images/mobile.svg" alt="">
+                  <img class="iconic icondark" src="../assets/images/mobile-dark.svg" alt="">
+                  <div class="right">
+                    <p class="up">
+                      Numri i telefonit
+                    </p>
+                    <p class="down">
+                      +383 49 135 244
+                    </p>
+                  </div>
+                </div>
+                <div class="way">
+                  <img class="iconic iconlight" src="../assets/images/mail.svg" alt="">
+                  <img class="iconic icondark" src="../assets/images/mail-dark.svg" alt="">
+                  <div class="right">
+                    <p class="up">
+                      Numri i telefonit
+                    </p>
+                    <p class="down">
+                      pcwdinfo@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="dedicated" class="form-block">
+                <form
+                  name="contact" method="post" action="/pages/success.html" netlify-honeypot="bot-field" data-netlify="true" onsubmit="submit" class="integrated static" netlify>
+                  <legend class="uni">Na kontaktoni</legend>
+                  <input class="d-none" name="bot-field">
+                  <div class="contact-wrap">
+                    <div class="inner-input">
+                      <i class="inner-icon">
+                      <img src="../assets/images/user.svg" alt="">
+                      </i>
+                      <input
+                        name="name" id="email" type="text" class="glo" title="Please enter your name" onkeydown="return /[a-zA-Z ]/i.test(event.key)" placeholder="Emri juaj" autocomplete="name" required>
+                    </div>
+                    <div class="inner-input">
+                      <i class="inner-icon">
+                      <img src="../assets/images/email.svg" alt="">
+                      </i>
+                      <input
+                      name="email" id="email" class="glo" type="text" placeholder="Email-i juaj" autocomplete="off" required>
+                    </div>
+                    <div class="inner-input">
+                      <i class="inner-icon">
+                        <img src="../assets/images/write.svg" alt="">
+                      </i>
+                      <textarea name="text" id="text" class="glo" type="text" placeholder="Mesazhi juaj" autocomplete="off" required></textarea>
+                    </div>
+                  </div>
+                  <div class="margin-up"><button class="primary-button submit">Dërgo</button></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <section id="footer" class="footer">
+          <div class="bgfooter">
+            <div class="footer-container">
+              <div class="top-part">
+                <div class="company">
+                  <picture>
+                  <source
+                  srcset="../assets/images/logo-bottom.webp"
+                  type="image/webp"
+                  />
+                  <img
+                  src="../assets/images/logo-bottom.svg"
+                  loading="lazy"
+                  alt="Logo bottom"
+                  />
+                  </picture>
+                  <div class="methods-wrapper">
+                    <div class="type">
+                      <picture>
+                        <img
+                        src="../assets/images/mails.svg"
+                        width="20" height="20"
+                        alt="Email icon"
+                        />
+                      </picture>
+                      <a target="_blank" href="mailto:pcwdinfo@gmail.com"><p>pcwdinfo@gmail.com</p></a>
+                    </div>
+                    <div class="type">
+                      <picture>
+                        <img
+                        src="../assets/images/mobil.svg"
+                        width="20" height="20"
+                        alt="Mobile"
+                        />
+                      </picture>
+                      <p>049400400</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="right-part">
+                  <div class="link-part">
+                    <h3 class="title-link">Faqet</h3>
+                    <div class="footer-list faca">
+                      <a href="../index.html"><div>Ballina</div></a>
+                      <a href="services.html"><div>Sherbimet</div></a>
+                      <a href="about.html"><div>Rreth Nesh</div></a>
+                      <a href="../index.html#projects"><div>Projektet</div></a>
+                      <a href="contact.html"><div>Kontakti</div></a>
+                    </div>
+                  </div>
+                  <div class="link-part">
+                    <h3 class="title-link">Sherbimet</h3>
+                    <div class="footer-list other">
+                      <div>Web design</div>
+                      <div>Krijimi i logos</div>
+                      <div>Menaxhimi i rrjeteve sociale</div>
+                      <div>Mirembajtje e webit</div>
+                      <div>SEO</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom-part">
+                <p>Copyright © 2024 | Prishtina Web Designs | All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </main>
+    <script src="darkmode.js"></script>
+  </body>
+</html>
