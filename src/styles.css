@@ -50,6 +50,10 @@ body.darkmode .iconlight {
     display: none;
 }
 
+body {
+    padding-top: 100px;
+}
+
 html, body { 
     height: 100%;
  }
@@ -147,10 +151,10 @@ a {
 
 .header {
     padding: 20px 16px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 2000;
     width: 100%;
     height: 100px;
     background: transparent;
@@ -192,7 +196,7 @@ a {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--headings-color);
+    background: var(--primary-color);
     transition: .3s ease;
 }
 .navbar a:hover::before{
@@ -252,18 +256,27 @@ nav ul li a {
     line-height: .5em;
 }
 
+picture img {
+    display: block; /* Removes the extra space */
+    height: auto; /* Maintain aspect ratio */
+}
+
+picture {
+    height: auto; /* Or a specific height */
+}
+
 .the-hero-widget {
 
     text-align: center;
 
     .section-title {
         font-size: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         padding-top: max(2rem, 2.5vw);
     }
 
     a {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     img {
@@ -278,23 +291,28 @@ nav ul li a {
     letter-spacing: -0.02em;
     color: var(--headings-color);
     white-space: pre-line;
+    line-height: 120%;
 }
 
 .paragraph-hero {
     font-size: 18px;
     line-height: 21px;
 }
-.primary-button {
-    position: relative;
-    display: inline-block;
-    padding: 20px 48px;
+
+.btn {
     color: var(--text-color);
-    cursor: pointer;
-    width: auto;
-    background-color: var(--primary-color);
-    font-size: 15px;
     box-shadow: 4px 5px 0 var(--border-color);
+    background-color: var(--primary-color);
     border-radius: 10px;
+}
+
+.primary-button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 48px;
+    cursor: pointer;
+    font-weight: 600;
+    width: auto;
     border: 2px solid var(--border-color);
     transition: background-color 0.3s, box-shadow 0.3s;
 }
@@ -1591,6 +1609,10 @@ fieldset {
     justify-items: center;
 }
 
+#forwho {
+    padding: 30px;
+}
+
 @supports not (background-image: url(../assets/images/bgservices.webp)) {
     .about-hero {
         background-image: url(../assets/images/bgservices.jpg)
@@ -2098,7 +2120,7 @@ fieldset {
     }
 
     .container-wrapper .features-widget {
-        margin: 56px 0 0 0;
+        margin: 64px 0 0 0;
     }
 
     .global-wrapper .text-left {
@@ -2175,6 +2197,14 @@ fieldset {
 
     .footer-navigation {
         margin: 0;
+    }
+
+    .wrap {
+        margin: 64px 0 0 0;
+    }
+
+    #forwho {
+        padding: 80px 30px 160px;
     }
 
 }
