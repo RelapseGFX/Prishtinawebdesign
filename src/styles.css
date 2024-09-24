@@ -1924,6 +1924,34 @@ fieldset {
     margin-bottom: 30px;
 }
 
+.single {
+
+    legend {
+        font-size: 24px;
+    }
+
+    .input-container {
+        
+        p {
+            font-weight: 500;
+        }
+    }
+}
+
+.contactUs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .contactUs-details {
+
+        .contact-method:nth-child(1) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
 .container-wrapper {
     
     .keyFeatures {
@@ -1935,6 +1963,29 @@ fieldset {
 
 .featuredServices .container .container-wrapper {
     text-align: center;
+}
+
+.contact-blue-blur {
+    opacity: .35;
+    z-index: -2;
+    filter: blur(103.5px);
+    background-color: #555cff;
+    border-radius: 50%;
+    width: 306px;
+    height: 508px;
+    position: absolute;
+    inset: 45% 0% auto auto;
+}
+
+.contact-green-blur {
+    z-index: -1;
+    filter: blur(103.5px);
+    background-color: #bfffe0;
+    border-radius: 50%;
+    width: 302px;
+    height: 292px;
+    position: absolute;
+    inset: auto 9% -8% auto;
 }
 
 @supports not (background-image: url(assets/images/bgabout.webp)) {
@@ -2699,6 +2750,21 @@ form {
 
 .container-wrapper .pricing-wrapper {
     margin-top: 64px;
+}
+
+.contactUs-wrapper {
+    
+    flex-direction: row;
+    gap: 30px;
+
+    .contactUs-form {
+        width: 55%;
+    }
+
+    .contactUs-details {
+        margin: auto;
+
+    }
 }
 }
 
