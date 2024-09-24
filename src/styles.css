@@ -17,7 +17,8 @@
     --border-color: #263238;
     --ul-color: #f6f7f9;
     --text-color: #fff;
-    --gray-color: #f6f7f9
+    --gray-color: #f6f7f9;
+    --borderlineColor: #0000001c;
 }
 .darkmode{
     --background-color: #0d1219;
@@ -30,6 +31,7 @@
     --ul-color: #3B3F44;
     --text-color: #263238;
     --gray-color: #3B3F44;
+    --borderlineColor: #263238;
 }
 .dark{
     display: none;
@@ -283,6 +285,10 @@ picture {
         max-height: 318px;
     }
 
+    p {
+        color: var(--headings-color);
+    }
+
 }
 
 .section-title {
@@ -394,6 +400,7 @@ picture {
     p {
         margin: 20px 0 0 0;
         font-size: 16px;
+        color: var(--headings-color);
     }
 }
 
@@ -461,7 +468,7 @@ picture {
     flex-direction: column;
     padding: 25px 20px 30px;
     inline-size: 100%;
-    border: 1px solid #0000001c;
+    border: 1px solid var(--borderlineColor);
     border-radius: 24px;
     text-align: left;
     flex: 0 0 auto; 
@@ -472,6 +479,10 @@ picture {
 
     a {
         display: inline-block;
+    }
+
+    p {
+        color: var(--headings-color);
     }
 
 }
@@ -710,6 +721,7 @@ legend {
 .description {
     font-size: 18px;
     line-height: 1.5em;
+    color: var(--headings-color);
 }
 
 .secondary-cta {
@@ -1225,6 +1237,7 @@ form {
         p {
             font-size: 15px;
             margin-bottom: 7px;
+            color: var(--headings-color);
         }
 
         .inner-input {
@@ -1398,6 +1411,9 @@ fieldset {
         margin-bottom: 30px;
     }
 
+    p {
+        color: var(--headings-color);
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -1464,6 +1480,7 @@ fieldset {
 
     p {
         margin-bottom: 40px;
+        color: var(--headings-color);
     }
 
 }
@@ -1495,6 +1512,10 @@ fieldset {
         left: -32px;
     }
 
+}
+
+.plan {
+    color: var(--headings-color);
 }
 
 .prices {
