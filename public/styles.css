@@ -17,7 +17,8 @@
     --border-color: #263238;
     --ul-color: #f6f7f9;
     --text-color: #fff;
-    --gray-color: #f6f7f9
+    --gray-color: #f6f7f9;
+    --borderlineColor: #0000001c;
 }
 .darkmode{
     --background-color: #0d1219;
@@ -30,6 +31,7 @@
     --ul-color: #3B3F44;
     --text-color: #263238;
     --gray-color: #3B3F44;
+    --borderlineColor: #263238;
 }
 .dark{
     display: none;
@@ -283,6 +285,10 @@ picture {
         max-height: 318px;
     }
 
+    p {
+        color: var(--headings-color);
+    }
+
 }
 
 .section-title {
@@ -394,6 +400,7 @@ picture {
     p {
         margin: 20px 0 0 0;
         font-size: 16px;
+        color: var(--headings-color);
     }
 }
 
@@ -461,7 +468,7 @@ picture {
     flex-direction: column;
     padding: 25px 20px 30px;
     inline-size: 100%;
-    border: 1px solid #0000001c;
+    border: 1px solid var(--borderlineColor);
     border-radius: 24px;
     text-align: left;
     flex: 0 0 auto; 
@@ -472,6 +479,10 @@ picture {
 
     a {
         display: inline-block;
+    }
+
+    p {
+        color: var(--headings-color);
     }
 
 }
@@ -615,14 +626,18 @@ legend {
 }
 
 .heading {
+    margin: 20px 0 15px;
+}
 
-    margin: 20px 0;
+.heading {
 
+    .section-title {
+        margin-bottom: 10px;
+    }
 }
 
 .heading div:nth-child(2) {
 
-    margin-top: 10px;
     color: var(--headings-color);
 
 }
@@ -706,6 +721,7 @@ legend {
 .description {
     font-size: 18px;
     line-height: 1.5em;
+    color: var(--headings-color);
 }
 
 .secondary-cta {
@@ -802,6 +818,7 @@ legend {
 
         p {
             margin-bottom: 15px;
+            font-size: 18px;
         }
 
         .subscription {
@@ -809,6 +826,7 @@ legend {
             border: 2px solid #fff;
             border-radius: 7px;
             display: inline-block;
+            font-size: 18px;
         }
     }
 
@@ -840,7 +858,7 @@ legend {
 
     .benefits {
 
-        padding-left: 32px;
+        padding-left: 48px;
         margin-top: 35px;
     
         li {
@@ -854,9 +872,9 @@ legend {
     
         img {
             position: absolute;
-            width: 18px;
-            height: 18px;
-            left: -32px;
+            width: 30px;
+            height: 30px;
+            left: -48px;
         }
     
     }
@@ -866,6 +884,21 @@ legend {
         display: inline-block;
         width: 100%;
         text-align: center;
+    }
+}
+
+.lump-sum {
+
+    position: relative;
+
+    .lower-info {
+        background-color: transparent;
+        color: var(--headings-color);
+
+        .subscription {
+            border: 2px solid var(--border-color);
+        }
+
     }
 }
 
@@ -880,6 +913,8 @@ legend {
 .pricing-wrapper {
     display: grid;
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .heading-up .section-title {
@@ -1202,6 +1237,7 @@ form {
         p {
             font-size: 15px;
             margin-bottom: 7px;
+            color: var(--headings-color);
         }
 
         .inner-input {
@@ -1375,6 +1411,9 @@ fieldset {
         margin-bottom: 30px;
     }
 
+    p {
+        color: var(--headings-color);
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -1441,6 +1480,7 @@ fieldset {
 
     p {
         margin-bottom: 40px;
+        color: var(--headings-color);
     }
 
 }
@@ -1472,6 +1512,10 @@ fieldset {
         left: -32px;
     }
 
+}
+
+.plan {
+    color: var(--headings-color);
 }
 
 .prices {
@@ -1812,10 +1856,6 @@ fieldset {
     margin-top: 20px;
 }
 
-#forwho {
-    padding: 30px;
-}
-
 #services {
     position: relative;
 }
@@ -1884,6 +1924,34 @@ fieldset {
     margin-bottom: 30px;
 }
 
+.single {
+
+    legend {
+        font-size: 24px;
+    }
+
+    .input-container {
+        
+        p {
+            font-weight: 500;
+        }
+    }
+}
+
+.contactUs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .contactUs-details {
+
+        .contact-method:nth-child(1) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
 .container-wrapper {
     
     .keyFeatures {
@@ -1897,25 +1965,48 @@ fieldset {
     text-align: center;
 }
 
-@supports not (background-image: url(../assets/images/bgabout.webp)) {
+.contact-blue-blur {
+    opacity: .35;
+    z-index: -2;
+    filter: blur(103.5px);
+    background-color: #555cff;
+    border-radius: 50%;
+    width: 306px;
+    height: 508px;
+    position: absolute;
+    inset: 45% 0% auto auto;
+}
+
+.contact-green-blur {
+    z-index: -1;
+    filter: blur(103.5px);
+    background-color: #bfffe0;
+    border-radius: 50%;
+    width: 302px;
+    height: 292px;
+    position: absolute;
+    inset: auto 9% -8% auto;
+}
+
+@supports not (background-image: url(assets/images/bgabout.webp)) {
     .about-bgImage {
-        background-image: url(../assets/images/bgabout.jpg)
+        background-image: url(assets/images/bgabout.jpg)
     }
 }
-@supports (background-image: url(../assets/images/bgabout.webp)) {
+@supports (background-image: url(assets/images/bgabout.webp)) {
     .about-bgImage {
-        background-image: url(../assets/images/bgabout.webp)
+        background-image: url(assets/images/bgabout.webp)
     }
 }
 
-@supports not (background-image: url(../assets/images/bgservices.webp)) {
+@supports not (background-image: url(assets/images/bgservices.webp)) {
     .services-bgImage {
-        background-image: url(../assets/images/bgservices.jpg)
+        background-image: url(assets/images/bgservices.jpg)
     }
 }
-@supports (background-image: url(../assets/images/bgservices.webp)) {
+@supports (background-image: url(assets/images/bgservices.webp)) {
     .services-bgImage {
-        background-image: url(../assets/images/bgservices.webp)
+        background-image: url(assets/images/bgservices.webp)
     }
 }
 
@@ -2328,10 +2419,6 @@ fieldset {
         margin-top: 56px;
     }
 
-    .container-wrapper .pricing-wrapper {
-        margin-top: 56px;
-    }
-
     .block-item {
 
         .section-title {
@@ -2369,6 +2456,14 @@ fieldset {
 
     section {
         padding: 80px 30px;
+    }
+
+    .pricing {
+        padding: 80px 30px 120px;
+    }
+
+    .forWho {
+        padding: 120px 0;
     }
 
     .block-item {
@@ -2492,19 +2587,21 @@ fieldset {
         align-items: stretch;
 
         .pricing-box {
-            max-width: 585px;
 
             .pricing-heading {
                 display: flex;
                 justify-content: space-between;
                 }
             }
+
+            .price-tag {
+
+                .price {
+                    font-size: 66px;
+                }
         }
     }
-
-    .container-wrapper .pricing-wrapper {
-        margin-top: 64px;
-    }
+        
 
     .top-part {
         display: flex;
@@ -2524,10 +2621,6 @@ fieldset {
 
     .wrap {
         margin: 64px 0 0 0;
-    }
-
-    #forwho {
-        padding: 80px 30px 160px;
     }
 
     .boxes-wrapper .block-item {
@@ -2644,7 +2737,6 @@ form {
     border-radius: 24px;
 }
 
-
 .featuredServices {
 
     .upper-part {
@@ -2654,9 +2746,38 @@ form {
         }
 
     }
-
 }
 
+.container-wrapper .pricing-wrapper {
+    margin-top: 64px;
+}
+
+.contactUs-wrapper {
+    
+    flex-direction: row;
+    gap: 30px;
+
+    .contactUs-form {
+        width: 55%;
+    }
+
+    .contactUs-details {
+        margin: auto;
+
+    }
+}
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .lump-sum {
+        top: 83px;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+}
 
 @media only screen and (max-width: 479px) {
     .aboutImage {
@@ -2698,6 +2819,7 @@ form {
             }
     }
 }
+}
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     form {
@@ -2738,8 +2860,9 @@ form {
     }
 
     .pricing-box {
-        border-radius: 20px;
+
         padding: 25px 30px 40px;
+        border-radius: 20px;
 
         .pricing-heading {
             display: flex;
@@ -2767,7 +2890,6 @@ form {
             }
         }
     }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -2814,6 +2936,11 @@ form {
         .lower-info {
             padding: 20px 30px 40px;
             border-radius: 20px;
+
+            .price-tag {
+                .price {
+                    font-size: 50px;
+                }
+            }
         }
 } 
-}
