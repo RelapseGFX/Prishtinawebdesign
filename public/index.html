@@ -324,6 +324,22 @@
         <div class="projects-wrapper">
           <div class="projects-item">
             <picture class="projects-img">
+
+              <img
+              src="assets/images/"
+              loading="lazy"
+              alt="Rrugemar Website"
+              />
+            </picture>
+            <div class="heading">
+            <div class="section-title">Rrugemar</div>
+            <div>Pejë</div>
+            </div>
+            <p>Rrugemar është një platformë ankandesh ku mund të bëni oferta për të blerë makina të riparuara dhe të përdorura.</p>
+            <a class="secondary-button">Së shpejti</a>
+        </div>
+          <div class="projects-item">
+            <picture class="projects-img">
                 <source
                 srcset="assets/images/tonn investments.webp"
                 type="image/webp"
@@ -340,25 +356,6 @@
             </div>
             <p>Marka Tonn Investments bashkon shërbimet e mëposhtme financiare dhe kompanitë e pasurive të paluajtshme.</p>
             <div class="secondary-button">Së shpejti</div>
-          </div>
-          <div class="projects-item">
-              <picture class="projects-img">
-                <source
-                srcset="assets/images/roadmar.webp"
-                type="image/webp"
-                />
-                <img
-                src="assets/images/roadmar.jpg"
-                loading="lazy"
-                alt="Rrugemar Website"
-                />
-              </picture>
-              <div class="heading">
-              <div class="section-title">Rrugemar</div>
-              <div>Pejë</div>
-              </div>
-              <p>Rrugemar është një platformë ankandesh ku mund të bëni oferta për të blerë makina të riparuara dhe të përdorura.</p>
-              <a class="secondary-button">Së shpejti</a>
           </div>
           <div class="projects-item">
               <picture class="projects-img">
@@ -708,7 +705,7 @@
         </div>
       </div>
       <div class="bottom-part">
-        Copyright © 2024 | Prishtina Web Designs | All Rights Reserved
+        Copyright © <span id="demo"></span> | Prishtina Web Designs | All Rights Reserved
       </div>
     </div>
   </footer>
@@ -716,7 +713,7 @@
   </script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
   <script type="text/javascript">
-  $(function(){
+    $(function(){
      // See if this is a touch device
      if ('ontouchstart' in window)
      {
@@ -729,6 +726,13 @@
         });
      }
   });
+
+    
+  </script>
+  <script>
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("demo").innerHTML = year;
   </script>
 </body>
 </html>
