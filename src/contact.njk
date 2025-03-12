@@ -1,0 +1,93 @@
+---
+title: Contact
+layout: 'base.njk'
+---
+<section class="contactUs">
+        <div class="container">
+          <div class="contactUs-wrapper">
+            <div class="contactUs-form">
+              <form
+                name="contact" method="post" action="/pages/success.html" onsubmit="submit" netlify-honeypot="bot-field" class="single" data-netlify="true" netlify>
+                <input name="bot-field" class="d-none">
+                <legend class="section-title">Na kontaktoni</legend>
+                <div class="input-container">
+                  <p>Emri i plote</p>
+                  <div class="inner-input">
+                    <i class="inner-icon iconlight">
+                      <img src="../assets/images/user.svg" alt="">
+                    </i>
+                    <i class="inner-icon icondark">
+                      <img src="../assets/images/user-dark.svg" alt="">
+                    </i>
+                    <input
+                    type="text" name="name" id="name" title="Please enter your name" onkeydown="return /[a-zA-Z ]/i.test(event.key)" placeholder="Emri juaj" required>
+                  </div>
+                </div>
+                <div class="input-container">
+                  <p>Email-i</p>
+                  <div class="inner-input">
+                    <i class="inner-icon iconlight">
+                      <img src="../assets/images/email.svg" alt="">
+                    </i>
+                    <i class="inner-icon icondark">
+                      <img src="../assets/images/email-dark.svg" alt="">
+                    </i>
+                    <input
+                    type="email" name="email" id="email" title="Please enter your email" placeholder="Email-i juaj" required>
+                  </div>
+                </div>
+                <div class="input-container">
+                  <p>Subjekti-i</p>
+                  <div class="inner-input">
+                    <i class="inner-icon iconlight">
+                      <img src="../assets/images/email.svg" alt="">
+                    </i>
+                    <i class="inner-icon icondark">
+                      <img src="../assets/images/email-dark.svg" alt="">
+                    </i>
+                    <input
+                    type="email" name="email" id="email" title="Please enter your email" placeholder="Email-i juaj" required>
+                  </div>
+                </div>
+                <div class="input-container">
+                  <p>Mesazhi juaj</p>
+                  <div class="inner-input">
+                    <i class="inner-icon iconlight">
+                      <img src="../assets/images/write.svg" alt="">
+                    </i>
+                    <i class="inner-icon icondark">
+                      <img src="../assets/images/write-dark.svg" alt="">
+                    </i>
+                    <textarea name="text" id="text" type="text" title="Please enter your message" placeholder="Na tregoni se si mund t'iu ndihmojme" required></textarea>
+                  </div>
+                </div>
+                <button class="btn primary-button submit">Dërgo</button>
+              </form>
+            </div>
+            <div class="contactUs-details">
+              <div class="contactusWrapper">
+                <div class="contact-method">
+                <picture>
+                  <img class="contact-icon iconlight" src="../assets/images/mobile.svg" alt="">
+                  <img class="contact-icon icondark" src="../assets/images/mobile-dark.svg" alt="">
+                </picture>
+                <div class="contact-text">
+                  Numri mobil
+                  <a class="value" href="https://api.whatsapp.com/send/?phone=%2B38349135244&text&type=phone_number&app_absent=0">+383 49 135 244</a>
+                </div>
+                </div>
+                <div class="contact-method">
+                <img class="contact-icon iconlight" src="../assets/images/mail.svg" alt="">
+                <img class="contact-icon icondark" src="../assets/images/mail-dark.svg" alt="">
+                <div class="contact-text">
+                  Email-i
+                  <a class="value" href="mailto:info@prishtinawebdesign.com">info@prishtinawebdesign.com</a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-blue-blur"></div>
+            <div class="contact-green-blur"></div>
+          </div>
+        </div>
+</section>

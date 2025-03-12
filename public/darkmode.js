@@ -6,17 +6,17 @@ const illustrations = document.querySelectorAll('.illustration');
 const enableDarkMode = () => {
     document.body.classList.add("darkmode");
     localStorage.setItem("darkMode", "enabled")
-    iconswitch.src = "../assets/images/sun.svg"; 
+    iconswitch.src = "assets/images/sun.svg"; 
 };
 
 const disableDarkMode = () => {
     document.body.classList.remove("darkmode");
     localStorage.setItem("darkMode", null);
-    iconswitch.src = "../assets/images/moon.svg";
+    iconswitch.src = "assets/images/moon.svg";
 };
 
 const getBasePath = () => {
-  return window.location.pathname.includes("index.html") ? "assets/images/sun.sv" : "assets/images/moon.svg";
+  return window.location.pathname.includes("index.html") ? "assets/images/sun.svg" : "assets/images/moon.svg";
 };
 
 if (darkMode === "enabled") {
@@ -31,9 +31,9 @@ darkModeToggle.addEventListener("click", () => {
         disableDarkMode();
     }
     if(darkMode !== "enabled") {
-        iconswitch.src = "../assets/images/sun.svg"
+        iconswitch.src = "assets/images/sun.svg"
       }else{
-        iconswitch.src = "../assets/images/moon.svg"
+        iconswitch.src = "assets/images/moon.svg"
       };
 });
 const body = document.querySelector('body');
