@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KJ0HTVM7D"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9KJ0HTVM7D');
+        </script>
+        <title>Web dizajn për biznese të vogla + Development | Prishtina Web Design</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="assets/images/favicon.ico" type="image/ico">
+        <meta name="description" content="Web dizajn për biznese të vogla + Development. Ne ofrojmë website unike me rezultate të kënaqshme — duke filluar prej €40/muaj.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0,"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="canonical" href="https://prishtinawebdesign.com/index.html"/>
+        <link rel="preload" fetchpriority="high" as="image" href="assets/images/bghero-image.webp" type="image/webp">
+        <link rel="preload" fetchpriority="high" as="image" href="assets/images/bghero-image-dark.webp" type="image/webp">
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    </head>
+    <body>
+        {%  include 'header.njk' %}
+        <main>
+        {{ content | safe }}
+        </main>
+        {% include 'footer.njk' %}
+
+        <script src="darkmode.js" defer>
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <script type="text/javascript">
+          $(function(){
+           // See if this is a touch device
+           if ('ontouchstart' in window)
+           {
+              // Set the correct [touchscreen] body class
+              $('body').removeClass('no-touch').addClass('touch');
+             
+              // Add the touch toggle to show text when tapped
+              $('div.boxInner img').click(function(){
+                 $(this).closest('.boxInner').toggleClass('touchFocus');
+              });
+           }
+        });
+      
+          
+        </script>
+        <script>
+          const d = new Date();
+          let year = d.getFullYear();
+          document.getElementById("demo").innerHTML = year;
+        </script>
+    </body>
+    
+</html>
