@@ -1,27 +1,30 @@
-let darkMode = localStorage.getItem('darkMode')
+let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 const iconswitch = document.querySelector('#iconswitch');
-const illustrations = document.querySelectorAll('.illustration');
 
 const enableDarkMode = () => {
     document.body.classList.add("darkmode");
-    localStorage.setItem("darkMode", "enabled")
-    iconswitch.src = "assets/images/sun.svg"; 
+    localStorage.setItem("darkMode", "enabled");
 };
 
 const disableDarkMode = () => {
     document.body.classList.remove("darkmode");
     localStorage.setItem("darkMode", null);
-    iconswitch.src = "assets/images/moon.svg";
 };
 
-const getBasePath = () => {
-  return window.location.pathname.includes("index.html") ? "assets/images/sun.svg" : "assets/images/moon.svg";
+const updateIcon = () => {
+    if (darkMode === 'enabled') {
+        iconswitch.src = "assets/images/sun.svg";
+    } else {
+        iconswitch.src = "assets/images/moon.svg";
+    }
 };
 
+// Initialize dark mode state
 if (darkMode === "enabled") {
     enableDarkMode();
 }
+updateIcon(); // Update icon based on initial state
 
 darkModeToggle.addEventListener("click", () => {
     darkMode = localStorage.getItem("darkMode");
@@ -30,21 +33,14 @@ darkModeToggle.addEventListener("click", () => {
     } else {
         disableDarkMode();
     }
-    if(darkMode !== "enabled") {
-        iconswitch.src = "assets/images/sun.svg"
-      }else{
-        iconswitch.src = "assets/images/moon.svg"
-      };
+    updateIcon(); // Update icon after toggling
 });
-const body = document.querySelector('body');
-    
-document.addEventListener('scroll' , () => {
-  const header = document.querySelector('header');
 
-  if (window.scrollY > 0) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 });
