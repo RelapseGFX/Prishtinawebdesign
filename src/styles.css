@@ -326,23 +326,20 @@ picture {
     border: 2px solid var(--border-color);
     transition: all ease 0.3s;
 }
-.--primary-button:hover {
+.--primary-button:hover,
+ .--secondary-button:hover
+ {
     box-shadow: 0 0 0 var(--border-color);
 }
 .--secondary-button {
     display: inline-block;
-    padding: 18px 48px;
+    padding: 13px 40px;
     color: var(--headings-color);
     cursor: pointer;
-    background-color: var(--secondary-color);
+    background-color: transparent;
     border-radius: 7px;
     border: 2px solid var(--border-color);
     transition: all ease .3s;
-}
-
-.--secondary-button:hover {
-    color: var(--background-color);
-    background-color: var(--secondary-color);
 }
 
 .margin-top {
@@ -570,7 +567,7 @@ picture {
     background-color: #AAE0BC;
 }
 
-.projects-item .secondary-button {
+.projects-item a {
     align-self: flex-start;
     margin-top: 56px;
 }
@@ -886,7 +883,7 @@ legend {
     
     }
 
-    .primary-button {
+    .--primary-button {
         margin-top: 20px;
         display: inline-block;
         width: 100%;
