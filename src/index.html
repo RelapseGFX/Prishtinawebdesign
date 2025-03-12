@@ -708,7 +708,7 @@
         </div>
       </div>
       <div class="bottom-part">
-        Copyright © <span id="cyear"></span> | Prishtina Web Designs | All Rights Reserved
+        Copyright © <span id="demo"></span> | Prishtina Web Designs | All Rights Reserved
       </div>
     </div>
   </footer>
@@ -733,10 +733,9 @@
     
   </script>
   <script>
-    window.addEventListener('load.', () => {
-      const year = document.getElementById('cyear');
-      year.innerHTML = new Date().getFullYear();
-    });
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("demo").innerHTML = year;
   </script>
 </body>
 </html>
