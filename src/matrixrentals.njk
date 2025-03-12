@@ -1,44 +1,9 @@
-<!DOCTYPE html>
-<html lang="EN">
-    <head>
-        <meta charset="utf-8">
-        <title>Matrix Apartments</title>
-        <link rel="icon" href="../assets/images/favicon.ico" type="image/ico">
-        <meta name="description" content="Web dizajn + development. SEO optimizim. Dizajni i grafikave per rrjete sociale. Logo + branding. Mirembajtje e webit">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="nav-container">
-              <picture class="logotop">
-                <source type="image/webp" srcset="../assets/images/logo-top.webp" media="prefers-color-scheme: light">
-                <source type="image/webp" srcset="../assets/images/logo-top-dark.webp" media="prefers-color-scheme: dark">
-                <img class="iconlight" src="assets/images/logo-top.svg" alt="">
-                <img class="icondark" src="assets/images/logo-top-dark.svg" alt="">
-              </picture>
-              <input type="checkbox" id="check">
-              <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>    
-              </label>
-              <div class="nav-right">
-                <nav class="navbar">
-                  <a class="active" href="index.html">Ballina</a>
-                  <a href="services.html">Sherbimet</a>
-                  <a href="about.html">Rreth Nesh</a>
-                  <a href="#projects">Projektet</a>
-                  <a href="contact.html">Kontakti</a>
-                </nav>
-                <button id="dark-mode-toggle" class="dark-mode-toggle">
-                  <img class="iconswitch" id="iconswitch" src="assets/images/sun.svg" alt="Moon and sun">
-                </button>
-              </div>
-            </div>
-        </header>
-        <section>
+---
+title: Matrix Properties
+layout: 'base.njk'
+---
+
+<section>
           <div class="container-narrow">
             <div class="projectWrapper">
               <div class="titleHeader">
@@ -94,17 +59,4 @@
               </div>
             </div>
           </div>
-        </section>
-        <script src="darkmode.js" defer>
-        </script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({
-            duration: 1000,
-            once: true
-          });
-        </script>
-    </body>
-    
-</html>
+</section>
