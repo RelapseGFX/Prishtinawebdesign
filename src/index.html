@@ -708,7 +708,7 @@
         </div>
       </div>
       <div class="bottom-part">
-        Copyright © 2024 | Prishtina Web Designs | All Rights Reserved
+        Copyright © <span id="cyear"></span> | Prishtina Web Designs | All Rights Reserved
       </div>
     </div>
   </footer>
@@ -729,6 +729,11 @@
         });
      }
   });
+
+    window.addEventListener('load.', () => {
+      const year = document.getElementById('cyear');
+      year.innerHTML = new Date().getFullYear();
+    });
   </script>
 </body>
 </html>
