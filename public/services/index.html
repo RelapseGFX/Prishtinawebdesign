@@ -28,11 +28,13 @@
         
         <header class="header">
     <div class="nav-container">
-      <picture class="logotop">
+      <a href="/index">
+        <picture class="logotop">
 
-        <img class="iconlight" src="/assets/images/logo-top.svg" alt="">
-        <img class="icondark" src="/assets/images/logo-top-dark.svg" alt="">
-      </picture>
+          <img class="iconlight" src="/assets/images/logo-top.svg" alt="">
+          <img class="icondark" src="/assets/images/logo-top-dark.svg" alt="">
+        </picture>
+      </a>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>    
@@ -46,12 +48,12 @@
           <a href="/index#projects">Work</a>
           <a href="/contact">Blog</a>
         </nav>
-        <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <button id="dark-mode-toggle-1" class="dark-mode-toggle">
           <img class="iconswitch" id="iconswitch" src="assets/images/sun.svg" alt="Moon and sun">
         </button>
       </div>
       <div class="nav-right">
-        <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <button id="dark-mode-toggle-2" class="dark-mode-toggle">
           <img class="iconswitch" id="iconswitch" src="assets/images/sun.svg" alt="Moon and sun">
         </button>
         <a href="/contact" class="btn --primary-button">Contact Us</a>
@@ -869,59 +871,62 @@
     <div class="container">
       <div class="top-part">
         <div class="company">
-          <img
+          <a href="/index">
+            <picture>
+            <img
+              class="iconLight"
               src="/assets/images/logo-bottom.svg"
               loading="lazy"
               alt="Logo bottom"
-          />
-          <div class="methods-wrapper">
-            <div class="type">
-              <a target="_blank" href="mailto:info@prishtinawebdesign.com">
-                <img
-                src="/assets/images/mails.svg"
-                width="20" height="20"
-                alt="Email icon"
-                />
-                info@prishtinawebdesign.com
-              </a>
-            </div>
-            <div class="type">
-              <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B38349135244&text&type=phone_number&app_absent=0">
-                <img
-                src="/assets/images/mobil.svg"
-                width="20" height="20"
-                alt="Mobile"
-                />
-                +383 49 135 244
-              </a>
-            </div>
-          </div>
+            />
+            <img
+              class="iconDark"
+              src="/assets/images/logo-bottom-dark.svg"
+              loading="lazy"
+              alt="Logo bottom"
+            />
+            </picture>
+          </a>
+          <p>We believe that every small business deserves
+            a website that suits them and helps them create
+            their online presence.</p>
+          <a href="" class="btn --primary-button">Contact Us</a>
         </div>
         <div class="footer-navigation">
           <div class="link-part">
-            <h6>Faqet</h3>
+            <h6>Pages</h3>
             <ul class="footer-list">
-              <li><a href="/index">Ballina</a></li>
-              <li><a href="/services">Shërbimet</a></li>
-              <li><a href="/about">Rreth Nesh</a></li>
-              <li><a href="/index#projects">Projektet</a></li>
-              <li><a href="/contact">Kontakti</a></li>
+              <li><a href="/index">Home</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/about">Portfolio</a></li>
+              <li><a href="/index#projects">About</a></li>
+              <li><a href="/">Industries</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           <div class="link-part">
-            <h6>Sherbimet</h6>
+            <h6>Services</h6>
             <ul class="footer-list no-hover-line">
               <li><a href="">Web design</a></li>
-              <li><a href="">Krijimi i logos</a></li>
-              <li><a href="">Rrjetet sociale</a></li>
-              <li><a href="">Mirëmbajtje</a></li>
               <li><a href="">SEO</a></li>
+              <li><a href="">Graphic Design</a></li>
+              <li><a href="">Website Maintenance</a></li>
+              <li><a href="">Social Media</a></li>
+            </ul>
+          </div>
+          <div class="link-part">
+            <h6>Contact Us</h6>
+            <ul class="footer-list contact-list">
+              <li><a target="_blank" href="mailto:info@webprishtina.com"><img src="/assets/images/mails.svg" alt="">info@webprishtina.com</a></li>
+              <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B38349135244&text&type=phone_number&app_absent=0"><img src="/assets/images/mobil.svg" alt="">+383 (0) 049 135 244</a></li>
+              <li><a target="_blank" href="https://g.co/kgs/3hyMf42"><img src="/assets/images/location.svg" alt="">Prishtine</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="bottom-part">
-        Copyright © <span id="demo"></span> | Prishtina Web Designs | All Rights Reserved
+        Copyright © <span id="demo"></span> | Web Prishtina | All Rights Reserved
+        <img src="/assets/images/satisfaction-guaranteed.svg" alt="">
       </div>
     </div>
   </footer>
