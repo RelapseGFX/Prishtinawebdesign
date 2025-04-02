@@ -183,6 +183,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .btn {
+        margin-left: 12px;
+    }
 }
 .navbar {
     margin-left: auto;
@@ -194,6 +198,9 @@ a {
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
+}
+.navbar a:nth-child(1) {
+    margin: 0;
 }
 .navbar a::before{
     content: '';
@@ -214,7 +221,6 @@ a {
     min-width: 44px;
     min-height: 44px;
     background: transparent;
-    margin-left: 40px;
     border: 2px solid #263238;
     border-radius: 5px;
     cursor: pointer;
@@ -272,8 +278,6 @@ picture {
 }
 
 .the-hero-widget {
-
-    text-align: center;
 
     .section-title {
         font-size: 40px;
@@ -2177,7 +2181,7 @@ fieldset {
         font-size: 18px;
     }
 
-    #check:checked ~ .nav-right {
+    #check:checked ~ .nav-middle {
         right: 0;
     }
     #icon{
@@ -2337,7 +2341,7 @@ fieldset {
         font-size: 18px;
     }
 
-    #check:checked ~ .nav-right {
+    #check:checked ~ .nav-middle {
         right: 0;
     }
     #icon{
