@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/assets');
     eleventyConfig.addPassthroughCopy('./src/darkmode.js');
     eleventyConfig.addPassthroughCopy('./src/cursor.css');
+    eleventyConfig.addPassthroughCopy('./src/work.css');
 
     return {
         dir: {
