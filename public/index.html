@@ -328,10 +328,13 @@
           <h2 class="section-title">Some of our work over the years</h2>
           <p class="description">We have worked with clients across Europe for home service businesses, restaurants, consulting agencies, construction companies, clinics, stores, training centers, marketing firms, and many more. No matter what business you are in, we can build an effective, beautiful, high-performing website that is appropriate for your industry.</p>
         </div>
-    
+
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
         <div class="projects-wrapper">
-          <div class="projects-item">
-            <picture class="projects-img">
+          <div class="portfolio-item">
+            <div class="portfolio-thumb">
+              <picture class="projects-img">
                 <source
                 srcset="assets/images/tonn investments.webp"
                 type="image/webp"
@@ -341,7 +344,8 @@
                 loading="lazy"
                 alt="Tonn Investments website"
                 />
-            </picture>
+              </picture>
+            </div>
             <div class="heading">
               <h4 class="section-title">MAM - Sanitar, Heizung, Klima</h4>
               <li><img src="/assets/images/pin.svg" alt="">Bretten, DE</li>
@@ -386,6 +390,52 @@
               <p>Buna Beauty is a Beauty and Spa center in Prishtina. We redesigned their old website Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius.</p>
           </div>
         </div>
+        <script>
+          var cursor = $(".cursor"),
+              follower = $(".cursor-follower");
+
+          var posX = 0,
+              posY = 0,
+              mouseX = 0,
+              mouseY = 0;
+
+          TweenMax.to({}, 0.016, {
+              repeat: -1,
+              onRepeat: function() {
+                  posX += (mouseX - posX) / 9;
+                  posY += (mouseY - posY) / 9;
+
+                  TweenMax.set(follower, {
+                      css: {
+                          left: posX - 20,
+                          top: posY - 20
+                      }
+                  });
+
+                  TweenMax.set(cursor, {
+                      css: {
+                          left: mouseX,
+                          top: mouseY
+                      }
+                  });
+              }
+          });
+
+          $(document).on("mousemove", function(e) {
+              mouseX = e.pageX;
+              mouseY = e.pageY;
+          });
+
+          $(".portfolio-item img").on("mouseenter", function() {
+              cursor.addClass("active");
+              follower.addClass("active");
+          });
+
+          $(".portfolio-item img").on("mouseleave", function() {
+              cursor.removeClass("active");
+              follower.removeClass("active");
+          });
+        </script>
 
         <div class="call"><a href="" class="btn --primary-button">View all projects</a></div>
       </div>
