@@ -1,0 +1,263 @@
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KJ0HTVM7D"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9KJ0HTVM7D');
+        </script>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="/style.css"/>
+        <title>Web dizajn për biznese të vogla + Development | Prishtina Web Design</title>
+        <link rel="icon" href="assets/images/favicon.ico" type="image/ico">
+        <meta name="description" content="Web dizajn për biznese të vogla + Development. Ne ofrojmë website unike me rezultate të kënaqshme — duke filluar prej €40/muaj.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="canonical" href="https://prishtinawebdesign.com/index.html"/>
+        <link rel="preload" fetchpriority="high" as="image" href="assets/images/bghero-image.webp" type="image/webp">
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+
+    </head>
+    <body>
+
+        
+        <header class="header">
+    <div class="nav-container">
+      <a href="/index">
+        <picture class="logotop">
+
+          <img class="iconlight" src="/assets/images/logo-top.svg" alt="">
+          <img class="icondark" src="/assets/images/logo-top-dark.svg" alt="">
+        </picture>
+      </a>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>    
+      </label>
+      
+      <div class="nav-middle">
+        <nav class="navbar">
+          <a class="active" href="/index">Home</a>
+          <a href="/services">Services</a>
+          <a href="/about">About</a>
+          <a href="/work">Work</a>
+          <a href="/cursor">Blog</a>
+        </nav>
+        <button id="dark-mode-toggle-1" class="dark-mode-toggle">
+          <img class="iconswitch" id="iconswitch" src="assets/images/sun.svg" alt="Moon and sun">
+        </button>
+      </div>
+      <div class="nav-right">
+        <button id="dark-mode-toggle-2" class="dark-mode-toggle">
+          <img class="iconswitch" id="iconswitch" src="assets/images/sun.svg" alt="Moon and sun">
+        </button>
+        <a href="/contact" class="btn --primary-button">Contact Us</a>
+      </div>
+    </div>
+  </header>
+        <main>
+        
+        
+<section>
+        <div class="container">
+            <div class="work-upper-padding">
+                <h2 class="section-title">Some of our work over the years</h2>
+            </div>
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+            <div id="wrapper" class="projects-wrapper">
+                <div class="portfolio-item">
+                  <div class="portfolio-thumb">
+                    <img src="/assets/images/MAM thubnail.jpg" loading="lazy" alt="MAM plumbing website"/>
+                  </div>
+                  <div class="heading">
+                    <h4 class="section-title">MAM - Sanitar, Heizung, Klima</h4>
+                    <li><img src="/assets/images/pin.svg" alt="">Bretten, DE</li>
+                    
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius, pharetra lacus vel, posuere eros. Maecenas arcu libero, porta et massa sit.</p>
+                </div>
+                <div class="portfolio-item">
+                  <div class="portfolio-thumb">
+                    <a href="/matrixrentals"><img src="/assets/images/matrix thubnail.jpg" loading="lazy" alt="Tonn Investments website"/></a>
+                  </div>
+                  <div class="heading">
+                    <h4 class="section-title">Matrix Properties</h4>
+                    <li><img src="/assets/images/pin.svg" alt="">Prishtine</li>
+                  </div>
+                  <p>Matrix Properties is an apartment complex in the heart of Pristina! We created for them a modern website with a CMS system where the owner has the ability to add, change, or remove properties.
+      
+                  </p>
+                </div>       
+                <div class="portfolio-item">
+                  <div class="portfolio-thumb">
+                    <img src="/assets/images/buna thubnail.jpg" alt="Mesokrypto Website" loading="lazy"/>
+                  </div>
+                  <div class="heading">
+                      <div class="section-title">Buna Beauty Center</div>
+                      <li><img src="/assets/images/pin.svg" alt="">Prishtine</li>
+                  </div>
+                  <p>Buna Beauty is a Beauty and Spa center in Prishtina. We redesigned their old website Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius.</p>
+                </div>
+            </div>
+        </div>
+</section>
+<script>
+    var cursor = $(".cursor"),
+        follower = $(".cursor-follower");
+
+    var posX = 0,
+        posY = 0,
+        mouseX = 0,
+        mouseY = 0;
+
+    TweenMax.to({}, 0.016, {
+        repeat: -1,
+        onRepeat: function() {
+            posX += (mouseX - posX) / 9;
+            posY += (mouseY - posY) / 9;
+
+            TweenMax.set(follower, {
+                css: {
+                    left: posX - 20,
+                    top: posY - 20
+                }
+            });
+
+            TweenMax.set(cursor, {
+                css: {
+                    left: mouseX,
+                    top: mouseY
+                }
+            });
+        }
+    });
+
+    $(document).on("mousemove", function(e) {
+        mouseX = e.pageX;
+        mouseY = e.pageY;
+    });
+
+    $(".portfolio-item img").on("mouseenter", function() {
+        cursor.addClass("active");
+        follower.addClass("active");
+    });
+
+    $(".portfolio-item img").on("mouseleave", function() {
+        cursor.removeClass("active");
+        follower.removeClass("active");
+    });
+</script>
+
+        </main>
+        <footer id="footer" class="footer">
+    <div class="container">
+      <div class="top-part">
+        <div class="company">
+          <a href="/index">
+            <picture>
+            <img
+              class="iconLight"
+              src="/assets/images/logo-bottom.svg"
+              loading="lazy"
+              alt="Logo bottom"
+            />
+            <img
+              class="iconDark"
+              src="/assets/images/logo-bottom-dark.svg"
+              loading="lazy"
+              alt="Logo bottom"
+            />
+            </picture>
+          </a>
+          <p>We believe that every small business deserves
+            a website that suits them and helps them create
+            their online presence.</p>
+          <a href="" class="btn --primary-button">Contact Us</a>
+        </div>
+        <div class="footer-navigation">
+          <div class="link-part">
+            <h6>Pages</h3>
+            <ul class="footer-list">
+              <li><a href="/index">Home</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/about">Portfolio</a></li>
+              <li><a href="/index#projects">About</a></li>
+              <li><a href="/">Industries</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="link-part">
+            <h6>Services</h6>
+            <ul class="footer-list no-hover-line">
+              <li><a href="">Web design</a></li>
+              <li><a href="">SEO</a></li>
+              <li><a href="">Graphic Design</a></li>
+              <li><a href="">Website Maintenance</a></li>
+              <li><a href="">Social Media</a></li>
+            </ul>
+          </div>
+          <div class="link-part">
+            <h6>Contact Us</h6>
+            <ul class="footer-list contact-list">
+              <li><a target="_blank" href="mailto:info@webprishtina.com"><img src="/assets/images/mails.svg" alt="">info@webprishtina.com</a></li>
+              <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B38349135244&text&type=phone_number&app_absent=0"><img src="/assets/images/mobil.svg" alt="">+383 (0) 049 135 244</a></li>
+              <li><a target="_blank" href="https://g.co/kgs/3hyMf42"><img src="/assets/images/location.svg" alt="">Prishtine</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part">
+        <span>Copyright © <span id="demo"></span> | Web Prishtina | All Rights Reserved</span>
+        <img src="/assets/images/coffee.svg" alt="">
+      </div>
+    </div>
+  </footer>
+
+        
+
+        <script src="/darkmode.js" defer>
+        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <script type="text/javascript">
+          $(function(){
+           // See if this is a touch device
+           if ('ontouchstart' in window)
+           {
+              // Set the correct [touchscreen] body class
+              $('body').removeClass('no-touch').addClass('touch');
+             
+              // Add the touch toggle to show text when tapped
+              $('div.boxInner img').click(function(){
+                 $(this).closest('.boxInner').toggleClass('touchFocus');
+              });
+           }
+        });
+      
+          
+        </script>
+        <script>
+          const d = new Date();
+          let year = d.getFullYear();
+          document.getElementById("demo").innerHTML = year;
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js">
+          
+        </script>
+        <script>
+            AOS.init({
+              duration: 1000,
+              once: true
+            });
+        </script>
+    </body>
+    
+</html>
