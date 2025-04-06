@@ -72,9 +72,6 @@ body {
     padding-top: 100px;
     color: var(--headings-color);
 }
-html {
-    scroll-behavior: smooth;
-}
 html, body { 
     height: 100%;
  }
@@ -3704,14 +3701,25 @@ body {
     margin: 0;
     padding: 0;
     cursor: none;
+    scroll-behavior: smooth;
 }
 
 * {
     box-sizing: border-box;
 }
 
+#cursor-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;  /* Prevents interfering with other interactions */
+    z-index: 9999;
+}
+
 .cursor {
-    position: absolute;
+    position: fixed;
     background: black;
     width: 8px;
     height: 8px;
@@ -3750,7 +3758,7 @@ body {
 }
 
 .cursor-follower {
-    position: absolute;
+    position: fixed;
     background: rgba(0, 0, 0, 0.1);
     width: 40px;
     height: 40px;

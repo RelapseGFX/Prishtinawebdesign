@@ -1025,9 +1025,9 @@ layout: 'base.njk'
         }
     });
 
-    $(document).on("mousemove", function(e) {
-        mouseX = e.pageX;
-        mouseY = e.pageY;
+    $(document).on("mousemove", function (e) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
     });
 
     $(".portfolio-item img").on("mouseenter", function() {
