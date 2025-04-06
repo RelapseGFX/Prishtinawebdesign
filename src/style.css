@@ -3228,6 +3228,7 @@ fieldset {
 
     .wrapper .projects-wrapper {
         margin-top: 64px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .aboutus-wrapper {
@@ -3730,6 +3731,7 @@ body {
     user-select: none;
     pointer-events: none;
     transform: scale(0.8);
+    z-index: 1000;
 }
 
 .cursor::before {
@@ -3740,12 +3742,13 @@ body {
     top: 0;
     left: 0;
     display: block;
-    background-image: url("http://mirkozeppieri.emanuelepapale.com/wp-content/uploads/2018/07/project-hover-cursor.jpg");
+    background-image: url(/assets/images/cursor.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
     opacity: 0;
+    z-index: 1000;
 }
 
 .cursor.active {

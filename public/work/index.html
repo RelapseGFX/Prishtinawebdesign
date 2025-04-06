@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+        
 
     </head>
     <body>
@@ -74,39 +75,51 @@
             <div class="cursor"></div>
             <div class="cursor-follower"></div>
             <div id="wrapper" class="projects-wrapper">
-                <div class="portfolio-item">
-                  <div class="portfolio-thumb">
-                    <img src="/assets/images/MAM thubnail.jpg" loading="lazy" alt="MAM plumbing website"/>
-                  </div>
-                  <div class="heading">
-                    <h4 class="section-title">MAM - Sanitar, Heizung, Klima</h4>
-                    <li><img src="/assets/images/pin.svg" alt="">Bretten, DE</li>
-                    
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius, pharetra lacus vel, posuere eros. Maecenas arcu libero, porta et massa sit.</p>
-                </div>
-                <div class="portfolio-item">
-                  <div class="portfolio-thumb">
-                    <a href="/matrixrentals"><img src="/assets/images/matrix thubnail.jpg" loading="lazy" alt="Tonn Investments website"/></a>
-                  </div>
-                  <div class="heading">
-                    <h4 class="section-title">Matrix Properties</h4>
-                    <li><img src="/assets/images/pin.svg" alt="">Prishtine</li>
-                  </div>
-                  <p>Matrix Properties is an apartment complex in the heart of Pristina! We created for them a modern website with a CMS system where the owner has the ability to add, change, or remove properties.
-      
-                  </p>
-                </div>       
-                <div class="portfolio-item">
-                  <div class="portfolio-thumb">
-                    <img src="/assets/images/buna thubnail.jpg" alt="Mesokrypto Website" loading="lazy"/>
-                  </div>
-                  <div class="heading">
-                      <div class="section-title">Buna Beauty Center</div>
-                      <li><img src="/assets/images/pin.svg" alt="">Prishtine</li>
-                  </div>
-                  <p>Buna Beauty is a Beauty and Spa center in Prishtina. We redesigned their old website Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius.</p>
-                </div>
+          <div class="portfolio-item">
+            <div class="portfolio-thumb">
+              <ul class="project-meta">
+                <li>Web development</li>
+                <li>Brand Identity</li>
+              </ul>
+              <img src="/assets/images/mam plumbing.jpg" loading="lazy" alt="MAM plumbing website" class="thumbnail"/>
+            </div>
+            <div class="heading">
+              <h4 class="section-title">MAM - Sanitar, Heizung, Klima</h4>
+              <li><img src="/assets/images/pin.svg" alt="">Bretten, DE</li>
+              
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius, pharetra lacus vel, posuere eros. Maecenas arcu libero, porta et massa sit.</p>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-thumb">
+              <a href="/matrixrentals"><ul class="project-meta">
+                <li>Brand Identity</li>
+                <li>CMS</li>
+                <li>Web Development</li>
+              </ul><img src="/assets/images/matrix properties.jpg" loading="lazy" alt="Tonn Investments website" class="thumbnail"/></a>
+            </div>
+            <div class="heading">
+              <h4 class="section-title">Matrix Properties</h4>
+              <li><img src="/assets/images/pin.svg" alt="">Prishtine</li>
+            </div>
+            <p>Matrix Properties is an apartment complex in the heart of Pristina! We created for them a modern website with a CMS system where the owner has the ability to add, change, or remove properties.
+
+            </p>
+          </div>       
+          <div class="portfolio-item">
+            <div class="portfolio-thumb">
+              <ul class="project-meta">
+                <li>Web redesign</li>
+
+              </ul>
+              <img src="/assets/images/buna beauty center.jpg" alt="Mesokrypto Website" loading="lazy" class="thumb-nail"/>
+            </div>
+            <div class="heading">
+                <div class="section-title">Buna Beauty Center</div>
+                <li><img src="/assets/images/pin.svg" alt="">Prishtine</li>
+            </div>
+            <p>Buna Beauty is a Beauty and Spa center in Prishtina. We redesigned their old website Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius.</p>
+          </div>
             </div>
         </div>
 </section>
@@ -257,6 +270,54 @@
               duration: 1000,
               once: true
             });
+        </script>
+        <script>
+          var cursor = $(".cursor"),
+              follower = $(".cursor-follower");
+        
+          var posX = 0,
+              posY = 0,
+              mouseX = 0,
+              mouseY = 0;
+        
+          TweenMax.to({}, 0.016, {
+              repeat: -1,
+              onRepeat: function() {
+                  posX += (mouseX - posX) / 9;
+                  posY += (mouseY - posY) / 9;
+        
+                  TweenMax.set(follower, {
+                      css: {
+                          left: posX - 20,
+                          top: posY - 20
+                      }
+                  });
+        
+                  TweenMax.set(cursor, {
+                      css: {
+                          left: mouseX,
+                          top: mouseY
+                      }
+                  });
+              }
+          });
+        
+          $(document).on("mousemove", function (e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+          });
+        
+          $(".portfolio-item img").on("mouseenter", function() {
+              console.log("Mouse Entered");
+              cursor.addClass("active");
+              follower.addClass("active");
+          });
+        
+          $(".portfolio-item img").on("mouseleave", function() {
+              console.log("Mouse Left");
+              cursor.removeClass("active");
+              follower.removeClass("active");
+          });
         </script>
     </body>
     
