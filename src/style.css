@@ -3709,7 +3709,6 @@ body {
     margin: 0;
     cursor: none;
     scroll-behavior: smooth;
-    Overflow-x: hidden;
 }
 
 * {
