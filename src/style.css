@@ -8,6 +8,7 @@
     list-style: none; 
 }
 :root{
+    --fs-700: clamp(2.1875rem, 5vw + 1rem, 3.75rem);
     --fs-xl: clamp(2.1875rem, 5vw + 1rem, 10.6875rem);
     --fs-600: clamp(2.1875rem, 5vw + 1rem, 3.125rem);
     --fs-500: clamp(1.1875rem, 3vw + 0.5rem, 1.5rem);
@@ -167,6 +168,13 @@ section{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    color: #fff;
+
+    .btn {
+        color: inherit;
+        border-color: inherit;
+        box-shadow: 4px 5px 0 #fff;
+    }
 }
 .contentCta {
     color: #fff;
@@ -339,7 +347,7 @@ picture {
 
     .section-title {
         color: #fff;
-        font-size: var(--fs-xl);
+        font-size: var(--fs-700);
         margin-bottom: 12px;
     }
 
@@ -1577,9 +1585,7 @@ fieldset {
         background-image: url(../assets/images/bgabout.webp)
     }
 }
-#about{
-    padding: 0;
-}
+
 .subhero-wrapper{
     margin: 0 auto;
     text-align: center;
@@ -2037,8 +2043,14 @@ fieldset {
     text-align: center;
 
     .section-title {
-        font-size: 40px;
-        color: white;
+        font-size: var(--fs-700);
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+        max-width: 728px;
+        margin-inline: auto;
     }
 }
 
@@ -2056,10 +2068,45 @@ fieldset {
 }
 
 .about-bgImage {
-    background-image: url(assets/images/bgabout.jpg);
+    background-color: rgba(59, 106, 252, 0.09);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.about .aboutComponents img{
+    position: absolute;
+    z-index: -1;
+    filter: blur(90px);
+}
+.about .aboutComponents img:nth-child(1){
+    filter: blur(0);
+}
+
+.about .aboutComponents img:nth-child(1){
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.about .aboutComponents img:nth-child(2){
+    top: 23px;
+    left: 272px;
+}
+
+.about .aboutComponents img:nth-child(3){
+    top: 260px;
+    left: 240px;
+}
+
+.about .aboutComponents img:nth-child(4){
+    top: 112px;
+    right: 208px;
+}
+
+.about .aboutComponents img:nth-child(5){
+    top: 245px;
+    right: 274px;
 }
 
 .introduction .container .blockWrapper .aboutImage {
@@ -2382,7 +2429,6 @@ fieldset {
 }
 
 .costumItem {
-    background: #fff;
     box-sizing: border-box;
 }
 
@@ -2531,30 +2577,6 @@ fieldset {
 .testimonialsWrapper {
     max-width: 800px;
     margin-inline: auto;
-}
-
-
-
-@supports not (background-image: url(assets/images/bgabout.webp)) {
-    .about-bgImage {
-        background-image: url(assets/images/bgabout.jpg)
-    }
-}
-@supports (background-image: url(assets/images/bgabout.webp)) {
-    .about-bgImage {
-        background-image: url(assets/images/bgabout.webp)
-    }
-}
-
-@supports not (background-image: url(assets/images/bgservices.webp)) {
-    .services-bgImage {
-        background-image: url(assets/images/bgservices.jpg)
-    }
-}
-@supports (background-image: url(assets/images/bgservices.webp)) {
-    .services-bgImage {
-        background-image: url(assets/images/bgservices.webp)
-    }
 }
 
 @media only screen and (max-width: 965px) {
@@ -3479,21 +3501,6 @@ form {
 
 }
 
-@media only screen and (min-width: 1440px) {
-
-    .lump-sum {
-        top: 83px;
-    }
-
-    section {
-        padding: 80px 0;
-    }
-
-    .header {
-        padding: 20px 0;
-    }
-}
-
 @media only screen and (max-width: 479px) {
     .aboutImage {
         border-radius: 10px;
@@ -3700,7 +3707,6 @@ form {
 html,
 body {
     margin: 0;
-    padding: 0;
     cursor: none;
     scroll-behavior: smooth;
 }
