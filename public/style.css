@@ -2056,6 +2056,7 @@ fieldset {
 
 .about {
     position: relative;
+    overflow: hidden;
 }
 
 .about .about-bgImage {
