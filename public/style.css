@@ -2580,6 +2580,18 @@ fieldset {
     margin-inline: auto;
 }
 
+.related-projects {
+    margin: 2rem 0;
+}
+
+.related-projects .wrapper .section-title {
+    text-align: left;
+}
+
+.mapPin {
+    max-width: 24px;
+}
+
 @media only screen and (max-width: 965px) {
 
     #cta{
@@ -3254,6 +3266,10 @@ fieldset {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .related-projects .wrapper .projects-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .aboutus-wrapper {
         display: flex;
         justify-content: space-between;
@@ -3498,6 +3514,10 @@ form {
 
 .ourBlog {
     margin: 80px 0;
+}
+
+.related-projects {
+    margin: 128px 0;
 }
 
 }

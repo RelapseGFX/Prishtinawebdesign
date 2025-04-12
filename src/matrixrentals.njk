@@ -56,9 +56,102 @@ layout: 'base.njk'
                     <img src="/assets/images/social media_1.jpg" data-aos="fade-up" alt="">
                     <img src="/assets/images/add ons_1.jpg" data-aos="fade-up" alt="">
                 </div>
+                <div id="wrapper" class="related-projects">
+                  <div class="container">
+                    <div class="wrapper">
+                      <div class="upper-part">
+                        <h2 class="section-title">See related projects</h2>
+                      </div>
+              
+                      <div id="wrapper" class="projects-wrapper">
+                        <div class="portfolio-item">
+                          <div class="portfolio-thumb">
+                            <a href="/beautysalon">
+                              <ul class="project-meta">
+                              <li>Web redesign</li>
+              
+                              </ul>
+                              <img src="/assets/images/BSC thubnail.jpg" alt="Mesokrypto Website" loading="lazy" class="thumb-nail"/></a>
+                          </div>
+                          <div class="heading">
+                              <div class="section-title">Buna Beauty Center</div>
+                              <li><img src="/assets/images/pin.svg" class="mapPin" alt="">Prishtine</li>
+                          </div>
+                          <p>Buna Beauty is a Beauty and Spa center in Prishtina. We redesigned their old website Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius.</p>
+                        </div>
+                        <div class="portfolio-item">
+                          <div class="portfolio-thumb">
+                            <ul class="project-meta">
+                              <li>Web development</li>
+                              <li>Brand Identity</li>
+                            </ul>
+                            <img src="/assets/images/mam plumbing.jpg" loading="lazy" alt="MAM plumbing website" class="thumbnail"/>
+                          </div>
+                          <div class="heading">
+                            <h4 class="section-title">MAM - Sanitar, Heizung, Klima</h4>
+                            <li><img src="/assets/images/pin.svg" class="mapPin" alt="">Bretten, DE</li>
+                            
+                          </div>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id blandit ligula, nec hendrerit leo. Ut eget sapien varius, pharetra lacus vel, posuere eros. Maecenas arcu libero, porta et massa sit.</p>
+                        </div>   
+                        
+                      </div>
+                      
+              
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 </section>
 <div class="cursor"></div>
 <div class="cursor-follower"></div>
+<script>
+  var cursor = $(".cursor"),
+      follower = $(".cursor-follower");
+
+  var posX = 0,
+      posY = 0,
+      mouseX = 0,
+      mouseY = 0;
+
+  TweenMax.to({}, 0.016, {
+      repeat: -1,
+      onRepeat: function() {
+          posX += (mouseX - posX) / 9;
+          posY += (mouseY - posY) / 9;
+
+          TweenMax.set(follower, {
+              css: {
+                  left: posX - 20,
+                  top: posY - 20
+              }
+          });
+
+          TweenMax.set(cursor, {
+              css: {
+                  left: mouseX,
+                  top: mouseY
+              }
+          });
+      }
+  });
+
+  $(document).on("mousemove", function (e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  $(".portfolio-thumb").on("mouseenter", function() {
+      console.log($(".portfolio-item .thumb-nail"));
+      cursor.addClass("active");
+      follower.addClass("active");
+  });
+
+  $(".portfolio-thumb").on("mouseleave", function() {
+      console.log($(".portfolio-item .thumb-nail"));
+      cursor.removeClass("active");
+      follower.removeClass("active");
+  });
+</script>
