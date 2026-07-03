@@ -4,6 +4,7 @@
   "description": "\"# Prishtinawebdesign\"",
   "main": "index.js",
   "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "a-sync-waterfall": "^1.0.1",
     "acorn": "^7.4.1",
     "ansi-styles": "^4.3.0",
@@ -192,12 +193,9 @@
     "ws": "^8.18.0",
     "yallist": "^4.0.0"
   },
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
-  },
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "start": "npx --yes @11ty/eleventy --serve",
+    "build": "npx --yes @11ty/eleventy"
   },
   "repository": {
     "type": "git",
